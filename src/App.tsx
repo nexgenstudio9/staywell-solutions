@@ -9,8 +9,9 @@ import Property from "./pages/Property";
 import Booking from "./pages/Booking";
 import Confirmation from "./pages/Confirmation";
 import Auth from "./pages/Auth";
-import Partner from "./pages/Partner";
-import PartnerDashboard from "./pages/PartnerDashboard";
+import Admin from "./pages/Admin";
+import AdminSEO from "./pages/AdminSEO";
+import AdminUsers from "./pages/AdminUsers";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,8 +29,9 @@ const App = () => (
           <Route path="/booking" element={<Booking />} />
           <Route path="/confirmation" element={<Confirmation />} />
           <Route path="/auth" element={<Auth />} />
-          <Route path="/partner" element={<Partner />} />
-          <Route path="/partner/dashboard" element={<PartnerDashboard />} />
+          <Route path="/admin" element={<Admin />} />
+          <Route path="/admin/seo" element={<AdminSEO />} />
+          <Route path="/admin/users" element={<AdminUsers />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
